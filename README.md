@@ -14,7 +14,9 @@ Log in to Netlify
 Due to some circumstance, I have to deploy it manually
 ![Step 2](documentation/2.JPG)
 Since we use existing domain, I moved the domain from one to another
-![Step 2](documentation/3.JPG)
+![Step 3](documentation/3.JPG)
+Change the domain forwarding in Niagahoster
+![Step 4](documentation/4.JPG)
 
 
 # About this Website
