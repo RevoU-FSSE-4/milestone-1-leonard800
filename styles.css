@@ -1,0 +1,358 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: left;
+  text-shadow: 4px 4px 2px grey;
+}
+
+@font-face {
+  font-family: norwester;
+  src: url(font/norwester.otf);
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 6em; 
+  align-items: center;
+  position: sticky;
+  padding: 1em;
+  margin: 0;
+  top: 0;
+  column-gap: 1em;
+  border-bottom: none; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo{
+  color: maroon;
+  font-family: norwester;
+  text-shadow: 4px 4px 2px grey;
+}
+
+.hero-slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.slide-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slide-text p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about1 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.achievement-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about2 {
+    flex: 1;
+    margin-left: 20px; /* Adjust as needed for spacing */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container .image-container {
+    order: -1; /* Move image to the beginning (left) */
+}
+
+.achievement-container .image-container {
+    order: 1; /* Move image to the end (right) */
+}
+
+.image-container {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.achievement-container {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.achievement-container .image-container {
+    order: 2; /* Move image to the end (right) */
+}
+
+.achievement-container .about2 {
+    order: 1; /* Move content to the beginning (left) */
+}
+
+.image-container {
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the entire container */
+}
+
+.career {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #2980b9;
+}
+
+.brands {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.box {
+  flex: 1 1 auto; 
+  width: 150px; 
+  height: 150px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.box img {
+  max-width: 100%; 
+  max-height: 100%; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain; 
+  border: none; 
+  transition: transform 0.3s ease; 
+}
+
+.box:hover img {
+  transform: scale(1.1); 
+}
+
+.box::after {
+  content: attr(data-text); 
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+footer {
+  background-color: black;
+  border: 1px solid white;
+}
+
+form {
+  border: 3px solid black;
+  font-family: Arial;
+}
+
+.container-form {
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: black;
+}
+
+input[type=email], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  background: lighten($black, 3%);  
+  border: 1px solid darken($black, 4%);
+  box-shadow: 0px 2px 0 darken($black, 5%), 2px 4px 6px darken($black, 2%);
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: black;
+  background: darken($white, 1.5%);
+  border: 1px solid rgba(#000, .05);
+  box-shadow: 1px 1px 2px rgba(#fff, .2);
+  color: lighten($white, 18%); 
+  text-decoration: none;
+  text-shadow: -1px -1px 0 darken($white, 9.5%);
+  transition: all 250ms linear;
+  animation: vertical-shaking 0.35s infinite;
+}
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+img {
+  width: 100%;
+  image-resolution: 1dppx; 
+}
+
+@media only screen and (max-width: 600px) {
+  img:nth-of-type(1) {
+    image-resolution: 72dpi; 
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  img:nth-of-type(2) {
+    image-resolution: 300dpi; 
+  }
+}
