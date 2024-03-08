@@ -13,12 +13,8 @@ Log in to Netlify
 ![Step 1](documentation/1.JPG)
 Due to some circumstance, I have to deploy it manually
 ![Step 2](documentation/2.JPG)
-The result after I deploy it to netfify
-![Step 3](documentation/3.JPG)
-Add a custom domain to netlify
-![Step 4](documentation/3.JPG)
-Domain has been added
-![Step 5](documentation/3.JPG)
+Since we use existing domain, I moved the domain from one to another
+![Step 2](documentation/3.JPG)
 
 
 # About this Website
