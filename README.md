@@ -17,6 +17,8 @@ Since we use existing domain, I moved the domain from one to another
 ![Step 3](documentation/3.JPG)
 Change the domain forwarding in Niagahoster
 ![Step 4](documentation/4.JPG)
+Change the nameserver in Niagahoster from Netlify, wait for 24 hours for change
+![Step 5](documentation/5.JPG)
 
 
 # About this Website
