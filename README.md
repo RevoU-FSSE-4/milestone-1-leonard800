@@ -19,6 +19,10 @@ Change the domain forwarding in Niagahoster
 ![Step 4](documentation/4.JPG)
 Change the nameserver in Niagahoster from Netlify, wait for 24 hours for change
 ![Step 5](documentation/5.JPG)
+DNS has been successfully connected
+![Step 6](documentation/6.JPG)
+Notice the change in domain name
+![Step 7](documentation/7.JPG)
 
 
 # About this Website
